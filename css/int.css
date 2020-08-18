@@ -1,0 +1,137 @@
+@import url("common.css");
+#f-page {
+  position: relative;
+  overflow: hidden;
+  /*    opacity: 0.8;*/
+}
+
+#f-page .tbox {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 600px;
+  visibility: visible;
+  overflow: hidden;
+}
+
+#f-page .tbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 65%;
+  margin: 80px auto;
+}
+
+.main h2 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 60px;
+}
+
+.main .m1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .m1 img {
+  width: 50%;
+}
+
+.main .m1 article {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.main .m1 article h2 {
+  font-size: 20px;
+}
+
+.main .m1 article p {
+  padding-top: 15px;
+  line-height: 1.5;
+  white-space: pre-line;
+  font-size: 18px;
+}
+
+.main .m2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.main .m2 p {
+  width: 50%;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.main .m2 img {
+  width: 50%;
+}
+
+.main .m3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .m3 img {
+  width: 50%;
+}
+
+.main .m3 p {
+  width: 50%;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+/*# sourceMappingURL=int.css.map */

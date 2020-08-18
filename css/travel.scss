@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('common.css');
+
+#f-page {
+    position: relative;
+    overflow: hidden;
+	/*    opacity: 0.8;*/
+	.tbox {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 700px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.main{
+	width: 65%; 
+	margin: 80px auto;
+h2{text-align: center; font-size: 2em; padding-bottom: 60px;}
+.m1{display: flex; justify-content: center;
+img{width: 50%;}
+article{width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	white-space: pre-line;
+	h2{}
+	p{padding-top: 15px;
+		line-height: 1.5;
+		white-space: pre-line;
+		font-size: 18px;}}}
+.m2{ display: flex; justify-content: center;
+	article{width: 100%;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			white-space: pre-line;
+			p{padding-top: 15px;
+			line-height: 1.5;
+			white-space: pre-line;
+			font-size: 18px;}}
+			img{width: 50%;}}
+.m3{display: flex; justify-content: center;
+	img{width: 50%;}
+	article{width: 100%;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			white-space: pre-line;
+			p{padding-top: 15px;
+			line-height: 1.5;
+			white-space: pre-line;
+			font-size: 18px;}}}
+.m4{ display: flex; justify-content: center;
+	article{width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	white-space: pre-line;
+	p{padding-top: 15px;
+	line-height: 1.5;
+	white-space: pre-line;
+	font-size: 18px;}}
+	img{width: 50%;}}
+.m5{display: flex; justify-content: center;
+	img{width: 50%;}
+	article{width: 100%;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			white-space: pre-line;
+			p{padding-top: 15px;
+			line-height: 1.5;
+			white-space: pre-line;
+			font-size: 18px;}}}
+
+}
+
+
+

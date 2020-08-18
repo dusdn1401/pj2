@@ -1,0 +1,54 @@
+@import url("common.css");
+#f-page {
+  position: relative;
+  overflow: hidden;
+  /*    opacity: 0.8;*/
+}
+
+#f-page .tbox {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+#f-page .tbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.main h2 span {
+  text-align: center;
+}
+
+.main ul li a {
+  text-align: center;
+}
+
+.main .mtb {
+  position: relative;
+  text-align: center;
+}
+
+.main .mtb .tb_1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+.main .mtb .tb_2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+/*# sourceMappingURL=community.css.map */

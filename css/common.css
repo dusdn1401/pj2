@@ -1,0 +1,864 @@
+@charset "UTF-8";
+
+html,
+body {
+    margin: 0 auto;
+    /* font-family: 'THEBalsamtint';
+*/
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+/*===========================================*/
+
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 350;
+}
+
+.top h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+}
+
+.top h1 a {
+    display: block;
+}
+
+.top h1 a img {
+    width: 300px;
+    height: 70px;
+}
+
+.top .top_menu {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.top .top_menu {}
+
+.top .top_menu a {
+    display: block;
+    background: #323842;
+}
+
+.top .top_menu a img {
+    width: 160px;
+    height: 46px;
+}
+
+.top .top_sns {
+    position: absolute;
+    top: 27px;
+    right: 57px;
+}
+
+.top .top_sns a {
+    float: left;
+    padding: 0 3.5px;
+    display: block;
+}
+
+.top .top_sns a img {
+    width: 30px;
+    height: 30px;
+}
+
+.top .language {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+/*
+.top .language a {
+    color: red;
+    display: inline-block;
+    font-size: 1.3em;
+    position: relative;
+}
+*/
+
+/*.top .language a:after {
+    content: '';
+    border: 6px solid transparent;
+    border-top: 10px solid red;
+    right: -20px;
+    top: 45%;
+    transform: translateY(-10%);
+    position: absolute;
+}*/
+
+.top .language ul {
+    float: left;
+}
+
+.top .language ul li {
+    padding: 10px;
+}
+
+.top .language ul li a {
+    display: block;
+}
+
+.top .language ul li a img {
+    width: 91px;
+    height: 39px;
+}
+
+.top .language .top_tell {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    float: left;
+    display: block;
+    color: white;
+}
+
+/*==================================*/
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: -65px;
+    z-index: 360;
+    background: #f00 left top;
+}
+
+.nav .nav_logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.nav .nav_logo a {
+    display: block;
+}
+
+.nav .nav_logo a img {
+    width: 200px;
+    height: 64px;
+}
+
+.nav .nav_menu {
+    position: absolute;
+    top: 8px;
+    right: 220px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.nav .nav_menu a {
+    background: #323842;
+}
+
+.nav .nav_menu a img {
+    width: 160px;
+    height: 46px;
+}
+
+.nav .top_sns {
+    position: absolute;
+    top: 17px;
+    right: 57px;
+}
+
+.nav .top_sns a {
+    float: left;
+    padding: 0 2px;
+}
+
+.nav .top_sns a img {
+    width: 30px;
+    height: 30px;
+}
+
+/*==============================*/
+
+.gnb {
+    background: #323842 left top;
+    background-size: 50px 50px;
+    position: fixed;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    z-index: 550;
+    opacity: 0.9;
+}
+
+.gnb > h2 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 322px;
+    margin-left: -161px;
+    z-index: 100;
+}
+
+.gnb h2 a {
+    display: block;
+}
+
+.gnb h2 a img {
+    width: 322px;
+    height: 67px;
+}
+
+.gnb .gnb_lst {
+    width: 100%;
+}
+
+.gnb .gnb_lst > ul {
+    position: relative;
+    width: 70%;
+    min-width: 1170px;
+    margin: 200px auto 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.gnb .gnb_lst > ul > li {
+    float: left;
+    width: 16%;
+}
+
+.gnb .gnb_lst > ul > li.glt_01 {
+    width: 18%;
+}
+
+.gnb .gnb_lst > ul > li.glt_02 {
+    width: 17%;
+}
+
+.gnb .gnb_lst > ul > li.glt_03 {
+    width: 18%;
+}
+
+.gnb .gnb_lst > ul > li.glt_05 {
+    width: 15%;
+}
+
+.gnb .gnb_lst > ul > li > ul > li {
+    line-height: 1.8em;
+}
+
+
+
+.gnb .gnb_lst > ul > li a {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.gnb .gnb_lst > ul > li > a {
+    color: #9fbebf;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+.gnb .gnb_lst > ul > li:hover > a {
+    color: #fe5252;
+}
+
+.gnb .gnb_lst > ul > li ul li a {
+    letter-spacing: 0.1em;
+    padding-left: 0.1em;
+    transition: .3s color, .3s letter-spacing, .3s padding-left;
+}
+
+.gnb .gnb_lst > ul > li ul li a:hover {
+    color: pink;
+    letter-spacing: 0.2em;
+    padding-left: 0.2em;
+}
+
+.gnb .gnb_lst > ul li a span {
+    display: block;
+}
+
+.gnb .gnb_lst > ul li a span.ko {
+    display: none;
+}
+
+.gnb .gnb_lst > ul > li ul li a:hover .en {
+    display: none;
+}
+
+.gnb .gnb_lst > ul > li ul li a:hover .ko {
+    display: block;
+}
+
+.gnb .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+}
+
+.gnb .close a {
+    display: block;
+}
+
+.gnb .close a img {
+    width: 42px;
+    height: 42px;
+}
+
+.gnb .sns {
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+    height: 30px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.gnb .sns a {
+    float: left;
+    width: 40px;
+    display: block;
+}
+
+.gnb .sns a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gnb .bg {
+    background: url('../img/20200810_103711.png')no-repeat right bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    max-width: 1165px;
+    max-height: 524px;
+    opacity: 0;
+}
+
+.gnb .bg a {
+    position: absolute;
+    bottom: 23%;
+    border-right-width: 13%;
+}
+
+.gnb .bg a img {}
+
+/*==============================*/
+
+.gnb {
+    display: none;
+}
+
+.gnb.active {
+    display: block;
+}
+
+
+/*===============================*/
+body {
+    position: relative;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    /*height: 100px;*/
+    z-index: 350;
+}
+
+.top h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+}
+
+.top h1 a {
+    display: block;
+}
+
+.top h1 a img {
+    width: 300px;
+    height: 70px;
+}
+
+.top .top_menu {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.top .top_menu {}
+
+.top .top_menu a {
+    display: block;
+    background: #323842;
+}
+
+.top .top_menu a img {
+    width: 160px;
+    height: 46px;
+}
+
+.top .top_sns {
+    position: absolute;
+    top: 27px;
+    right: 57px;
+}
+
+.top .top_sns a {
+    float: left;
+    padding: 0 3.5px;
+    display: block;
+}
+
+.top .top_sns a img {
+    width: 30px;
+    height: 30px;
+}
+
+.top .language {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+/*
+.top .language a {
+    color: red;
+    display: inline-block;
+    font-size: 1.3em;
+    position: relative;
+}
+*/
+
+/*.top .language a:after {
+    content: '';
+    border: 6px solid transparent;
+    border-top: 10px solid red;
+    right: -20px;
+    top: 45%;
+    transform: translateY(-10%);
+    position: absolute;
+}*/
+
+.top .language ul {
+    float: left;
+}
+
+.top .language ul li {
+    padding: 10px;
+}
+
+.top .language ul li a {
+    display: block;
+}
+
+.top .language ul li a img {
+    width: 91px;
+    height: 39px;
+}
+
+.top .language .top_tell {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    float: left;
+    display: block;
+    color: white;
+}
+
+/*==================================*/
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: -65px;
+    z-index: 360;
+    background: #f00 left top;
+}
+
+.nav .nav_logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.nav .nav_logo a {
+    display: block;
+}
+
+.nav .nav_logo a img {
+    width: 200px;
+    height: 64px;
+}
+
+.nav .nav_menu {
+    position: absolute;
+    top: 8px;
+    right: 220px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.nav .nav_menu a {
+    background: #323842;
+}
+
+.nav .nav_menu a img {
+    width: 160px;
+    height: 46px;
+}
+
+.nav .top_sns {
+    position: absolute;
+    top: 17px;
+    right: 57px;
+}
+
+.nav .top_sns a {
+    float: left;
+    padding: 0 2px;
+}
+
+.nav .top_sns a img {
+    width: 30px;
+    height: 30px;
+}
+
+/*==============================*/
+
+.gnb {
+    background: #323842 left top;
+    background-size: 50px 50px;
+    position: fixed;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    z-index: 550;
+    opacity: 0.9;
+}
+
+.gnb > h2 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 322px;
+    margin-left: -161px;
+    z-index: 100;
+}
+
+.gnb h2 a {
+    display: block;
+}
+
+.gnb h2 a img {
+    width: 322px;
+    height: 67px;
+}
+
+.gnb .gnb_lst {
+    width: 100%;
+}
+
+.gnb .gnb_lst > ul {
+    position: relative;
+    width: 70%;
+    min-width: 1170px;
+    margin: 200px auto 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.gnb .gnb_lst > ul > li {
+    float: left;
+    width: 16%;
+}
+
+.gnb .gnb_lst > ul > li.glt_01 {
+    width: 18%;
+}
+
+.gnb .gnb_lst > ul > li.glt_02 {
+    width: 17%;
+}
+
+.gnb .gnb_lst > ul > li.glt_03 {
+    width: 18%;
+}
+
+.gnb .gnb_lst > ul > li.glt_05 {
+    width: 15%;
+}
+
+.gnb .gnb_lst > ul > li > ul > li {
+    line-height: 1.8em;
+}
+
+
+
+.gnb .gnb_lst > ul > li a {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.gnb .gnb_lst > ul > li > a {
+    color: #9fbebf;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+.gnb .gnb_lst > ul > li:hover > a {
+    color: #fe5252;
+}
+
+.gnb .gnb_lst > ul > li ul li a {
+    letter-spacing: 0.1em;
+    padding-left: 0.1em;
+    transition: .3s color, .3s letter-spacing, .3s padding-left;
+}
+
+.gnb .gnb_lst > ul > li ul li a:hover {
+    color: pink;
+    letter-spacing: 0.2em;
+    padding-left: 0.2em;
+}
+
+.gnb .gnb_lst > ul li a span {
+    display: block;
+}
+
+.gnb .gnb_lst > ul li a span.ko {
+    display: none;
+}
+
+.gnb .gnb_lst > ul > li ul li a:hover .en {
+    display: none;
+}
+
+.gnb .gnb_lst > ul > li ul li a:hover .ko {
+    display: block;
+}
+
+.gnb .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+}
+
+.gnb .close a {
+    display: block;
+}
+
+.gnb .close a img {
+    width: 42px;
+    height: 42px;
+}
+
+.gnb .sns {
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+    height: 30px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.gnb .sns a {
+    float: left;
+    width: 40px;
+    display: block;
+}
+
+.gnb .sns a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gnb .bg {
+    background: url('../img/20200810_103711.png')no-repeat right bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    max-width: 1165px;
+    max-height: 524px;
+    opacity: 0;
+}
+
+.gnb .bg a {
+    position: absolute;
+    bottom: 23%;
+    border-right-width: 13%;
+}
+
+.gnb .bg a img {}
+
+/*==============================*/
+
+.gnb {
+    display: none;
+}
+
+.gnb.active {
+    display: block;
+}
+
+
+/*===============================*/
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    background: #323842;
+    z-index: 200;
+}
+
+.foot {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.foot h3 {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.foot h3 a {}
+
+.foot h3 a img {}
+
+.foot address {
+    padding: 35px 0 25px;
+    text-align: center;
+    white-space: pre-line;
+    color: white;
+}
+
+.foot .f-sns {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+.foot .f-sns a {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.foot .f-sns a img {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.top_btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.top_btn a {
+    display: block;
+}
+
+.top_btn a img {}

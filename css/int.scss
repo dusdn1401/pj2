@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url('common.css');
+
+#f-page {
+    position: relative;
+    overflow: hidden;
+	/*    opacity: 0.8;*/
+	.tbox {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 600px;
+		visibility: visible;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.main{
+	width: 65%; 
+	margin: 80px auto;
+h2{text-align: center; font-size: 2em; padding-bottom: 60px;}
+.m1{display: flex; justify-content: center;
+img{width: 50%;}
+article{width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    white-space: pre-line;h2{font-size: 20px;}p{padding-top: 15px;
+		line-height: 1.5;
+		white-space: pre-line;
+		font-size: 18px;}}}
+.m2{ display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+	height: 100%;
+	p {width: 50%;
+		text-align: center;
+		white-space: pre-line;
+		line-height: 2;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		font-size: 18px;}
+		img {
+			width: 50%;
+		}}
+.m3{ display: flex;
+	justify-content: center;
+	img {
+		width: 50%;} 
+		p {
+			width: 50%;
+			text-align: center;
+			white-space: pre-line;
+			line-height: 2;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			font-size: 18px;
+	}}
+
+}
+
+
+

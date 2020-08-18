@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url('common.css');
+
+
+#f-page {
+    position: relative;
+    overflow: hidden;
+    /*    opacity: 0.8;*/
+}
+
+
+#f-page .tbox {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    visibility: visible;
+    overflow: hidden;
+}
+
+
+#f-page .tbox img {
+    width: 100%;
+    height: 120%;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+span {
+    display: block;
+    padding: 20px 0;
+}
+
+main h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 2em;
+}
+
+.info_address {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.info_location {
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    white-space: pre-line
+}
+
+.info_location span {
+    font-weight: bold;
+    display: block;
+}
+
+
+
+
+
+
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>intro</title>
+    <link href="css/int.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="index">
+    <div id="header">
+        <div class="top" id="top">
+            <h1>
+                <a href="">
+                    <img src="img/logowww.png" alt=""></a>
+            </h1>
+            <div class="top_menu">
+                <a href="#">
+                    <img src="img/menu.png" alt=""> </a>
+            </div>
+            <div class="top_sns">
+                <a href="#"><img src="img/instagram_w.png" alt=""> </a>
+            </div>
+            <div class="language">
+                <!--<a>KOR</a>-->
+                <ul>
+                    <li><a href="#"><img src="img/lan.png" alt=""></a></li>
+                </ul>
+                <span class="top_tell">010-6512-6743</span>
+            </div>
+        </div>
+
+
+        <div class="nav">
+            <div class="nav_logo">
+                <a href="#"><img src="img/logobbb.png" alt=""></a></div>
+            <div class="nav_menu">
+                <a href="#"><img src="img/menu.png" alt=""></a></div>
+            <div class="top_sns">
+                <a href="#"><img src="img/instagram_b.png" alt=""></a></div>
+        </div>
+        <div id="gnb" class="gnb" style="height: 100%; transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;">
+            <h2><a href="#"> <img src="img/logowww.png" alt=""> </a></h2>
+            <div class="gnb_lst" style="opacity: 1; transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;">
+                <ul>
+                    <li class="glt_01">
+                        <a href="">ABOUT</a>
+                        <ul>
+                            <li><a href="">
+                                    <span>인사말</span></a></li>
+                            <li><a href="">
+                                    <span class="en">LOCATION</span>
+                                    <span class="ko">오시는길</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="glt_02"> <a>ROOMS</a></li>
+                    <li class="glt_03"><a>SERVICE</a>
+                        <ul>
+                            <li><a>
+                                    <span class="en">SERVICE</span>
+                                    <span class="ko">서비스</span>
+                                </a></li>
+                            <li><a>
+                                    <span class="en">FACILITIES</span>
+                                    <span class="ko">부대시설</span>
+                                </a></li>
+                            <li><a>
+                                    <span class="en">TRAVEL</span>
+                                    <span class="ko">주변여행지</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="glt_04"><a>RESERVATION</a>
+                        <ul>
+                            <li><a><span class="en">RESERVATION</span><span class="ko">실시간 예약하기</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="glt_05"><a>COMMUNITY </a>
+                        <ul>
+                            <li><a>
+                                    <span class="en">NOTICE</span>
+                                    <span class="ko">공지사항</span></a></li>
+
+                            <li><a>
+                                    <span class="en">REVIEW</span>
+                                    <span class="ko">후기</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="close">
+                    <a href="#"><img src="img/close.png" alt=""></a></div>
+
+                <div class="sns">
+                    <a href="#"><img src="img/instagram_w.png" alt=""></a></div>
+
+                <div class="bg">
+                    <a href="#">
+                        <img src="img/20200810_103711.png" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector('.top .top_menu');
+        const gnb = document.querySelector('.gnb');
+        const clo = document.querySelector('.close');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            gnb.classList.toggle('active');
+        });
+
+        clo.addEventListener('click', function() {
+            gnb.classList.remove('active');
+        })
+
+    </script>
+    <div id="f-page" class="fpage">
+        <div id="f-page-wrap" class="pW">
+            <div id="section01" class="tbox">
+                <img src="img/20200810_103308.png" alt="">
+                <div class="mask"></div>
+            </div>
+        </div>
+    </div>
+    <!--=========================================-->
+
+    <div class="main">
+
+
+        <h2> 펜션소개</h2>
+
+        <div class="m1">
+            <img src="img/int_1.png" alt="">
+            <article>
+                <h2> 사랑그리기 펜션</h2>
+                <p>가평 여행 시작을 위한 이상적인 장소입니다.
+                    도심에서 단 거리에 있어 쉽게 이동할 수 있으며,
+                </p>
+            </article>
+
+        </div>
+        <div class="m2">
+            <p>피곤하고 지친 여행자들을 기운나게 하기 위해
+                우수한 서비스와 보든 필수 시설을 제공합니다.
+
+                많은 객실에서 편안함을 더하기 위해
+                무선 인터넷, 금연객실, 에어컨, 책상을 제공합니다.
+            </p>
+
+            <img src="img/int_2.png" alt="">
+
+        </div>
+
+        <div class="m3">
+            <img src="img/int_3.png" alt="">
+
+            <p>투숙 기간 다양한 여가 시설들을 이용할 수 있습니다.
+                사랑그리기 펜션의 전문적인 서비스와
+                다양한 특색의 매력적인 조합을 발견해보세요
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--===========================================-->
+    <footer>
+        <div class="foot">
+            <h3><a href=""><img src="img/logowww.png" alt=""></a></h3>
+
+            <address>
+                상호명 : 사랑그리기
+                대표 : 김아름
+                사업자 등록번호 : 594-10-00955
+                전화번호 : 010-6512-6743
+                이메일 : ttlpink@naver.com
+                주소 : 경기 가평군 북면 가화로 1144-299 (제령리)
+            </address>
+
+            <div class="f-sns">
+                <a href="#" target="_blank"> <img src="img/instagram_w.png" alt="" target="_blank"></a>
+            </div>
+
+        </div>
+        <div class="top_btn">
+            <a><img src="img/top.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script>
+        var asideEl = document.querySelector('.top_btn a');
+        var asideTop = asideEl.offsetTop;
+
+
+        asideEl.addEventListener('click', function() {
+            window.scrollTo({
+                left: 0,
+                top: 0
+                /*behavior: 'smooth'*/
+            });
+        })
+
+
+        window.addEventListener('scroll', function() {
+            if (this.scrollY > window.innerHeight) {
+                asideEl.classList.add('active');
+            } else {
+                asideEl.classList.remove('active');
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
