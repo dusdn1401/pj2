@@ -19,36 +19,113 @@
 }
 
 .main {
-  width: 100%;
   text-align: center;
-  margin: 0 auto;
-  padding: 50px;
+  padding: 80px;
 }
 
-.main h2 span {
+.main h2 {
   text-align: center;
-}
-
-.main ul li a {
-  text-align: center;
+  padding-bottom: 80px;
 }
 
 .main .mtb {
-  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .mtb ul li {
+  display: inline;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 50px;
+}
+
+.main .mtb .t1 {
   text-align: center;
+  width: 100%;
+  margin: 80px auto;
 }
 
-.main .mtb .tb_1 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
+.main .mtb .t1 table {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 20px;
+  padding: 60px 0 0;
 }
 
-.main .mtb .tb_2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
+.main .mtb .t1 table thead {
+  background: #ddd;
+}
+
+.main .mtb .t1 table thead tr {
+  line-height: 2em;
+}
+
+.main .mtb .t1 table thead tr th {
+  border-radius: 10px;
+}
+
+.main .mtb .t1 table tbody tr td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+  line-height: 2em;
+}
+
+.main .mtb .t2 {
+  text-align: center;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.main .mtb .t2 table {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 20px;
+  padding: 60px 0 0;
+}
+
+.main .mtb .t2 table thead {
+  background: #ddd;
+}
+
+.main .mtb .t2 table thead tr {
+  border: 1px solid #ddd;
+  line-height: 2em;
+}
+
+.main .mtb .t2 table thead tr th {
+  border-radius: 10px;
+}
+
+.main .mtb .t2 table tbody tr td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+  line-height: 2em;
+}
+
+.main .mtb .t2 .button {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main .mtb .t2 .button a {
+  width: 150px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 40px auto;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 15px;
+  background: #323842;
+  line-height: 2;
+}
+
+.main .mtb .t2 .button a:hover {
+  background: white;
+  color: #323842;
+  border: 1px solid #323842;
 }
 /*# sourceMappingURL=community.css.map */

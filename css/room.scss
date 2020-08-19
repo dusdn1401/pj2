@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url('common.css');
+
+#f-page {
+    position: relative;
+    overflow: hidden;
+
+    /*    opacity: 0.8;*/
+    .tbox {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.contents{
+    h2{text-align: center; padding:80px;}
+    .room{width: 60%; margin: 0 auto;
+        display: flex; justify-content: space-between;
+        padding-bottom: 100px;
+
+        img{width: 50%;}
+        .info{ width: 50%; padding:20px 0 0 30px;
+            h3{ padding-bottom: 20px;}
+            p{white-space: pre-line;line-height: 2em;}
+        .button {
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            overflow: hidden;
+        }
+        .button a {
+            width: 100%;
+            padding-right: 20px;
+            text-align: right;
+            display: inline-block;
+            border-radius: 10px;
+            margin: 40px auto;
+            color: #fff;
+            transition: .5s;
+            font-size: 15px;
+            background:#323842;
+            line-height: 2;}
+        .button a:hover{background:white; color:#323842;
+        border: 1px solid #323842;}
+        }
+    }
+    .slide {position:relative;width:100%;height:100%;overflow:hidden;
+        .slide_show {position:relative;width:100%;height:100%;overflow:hidden;
+            li {position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;z-index:50;.active {z-index:100;}}}
+        .arrow {position:absolute;top:50%;margin-top:-42px;z-index:300;a {display:block;}}
+        .prev {left:0;}
+        .next {right:0;}
+        .nav {position:absolute;bottom:5%;left:50%;z-index:300;
+            li {float:left;width:16px;height:33px;margin-right:5px; 
+                a {width:8px;height:33px;display:block;
+                background:url(http://gonylab5.speedgabia.com/havet/final/images/blt_row.png) no-repeat left top;
+                transition: transform 0.5s ease; -webkit-transition: transform 0.5s ease;-moz-transition: transform 0.5s ease; .active {transform:rotate(-24deg); -webkit-transition:rotate(-24deg);-moz-transition:rotate(-24deg);}
+                }
+            }
+        }
+        }
+    }
