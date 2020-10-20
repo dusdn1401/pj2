@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>사랑그리기펜션</title>
     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
+
 </head>
 
 <body id="index">
@@ -33,7 +38,7 @@
 
         <div class="nav">
             <div class="nav_logo">
-                <a href="#"><img src="img/logobbb.png" alt=""></a></div>
+                <a href="index.html"><img src="img/logobbb.png" alt=""></a></div>
             <div class="nav_menu">
                 <a href="#"><img src="img/menu.png" alt=""></a></div>
             <div class="top_sns">
@@ -48,12 +53,12 @@
                         <ul>
                             <li><a href="">
                                     <span>인사말</span></a></li>
-                            <li><a href="">
+                            <li><a href="road.html">
                                     <span class="en">LOCATION</span>
                                     <span class="ko">오시는길</span></a></li>
                         </ul>
                     </li>
-                    <li class="glt_02"> <a>ROOMS</a></li>
+                    <li class="glt_02"><a href="room.html">ROOMS</a></li>
                     <li class="glt_03"><a>SERVICE</a>
                         <ul>
                             <li><a>
@@ -75,15 +80,17 @@
                             <li><a><span class="en">RESERVATION</span><span class="ko">실시간 예약하기</span></a></li>
                         </ul>
                     </li>
-                    <li class="glt_05"><a>COMMUNITY </a>
+                    <li class="glt_05"><a href="community.html">COMMUNITY </a>
                         <ul>
-                            <li><a>
+                            <li><a href="community.html">
                                     <span class="en">NOTICE</span>
-                                    <span class="ko">공지사항</span></a></li>
+                                    <span class="ko">공지사항</span></a>
+                            </li>
 
-                            <li><a>
+                            <li><a href="community.html">
                                     <span class="en">REVIEW</span>
-                                    <span class="ko">후기</span></a></li>
+                                    <span class="ko">후기</span></a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -95,7 +102,8 @@
 
                 <div class="bg">
                     <a href="#">
-                        <img src="img/20200810_103711.png" alt=""></a></div>
+                        <img src="img/20200810_103308.png" alt=""></a></div>
+
             </div>
         </div>
     </div>
@@ -114,140 +122,116 @@
         clo.addEventListener('click', function() {
             gnb.classList.remove('active');
         })
-
     </script>
+
+
+    <!--==============================================-->
 
 
     <div id="f-page" class="fpage">
-        <div id="f-page-wrap" class="pW">
-            <div id="section01" class="tbox">
-                <img src="img/index_1.png" alt="">
-                <div class="mask"></div>
-            </div>
-            <div id="section02" class="tbox">
-                <img src="img/index_2.png" alt="">
-                <div class="mask"></div>
-            </div>
-            <div id="section03" class="tbox">
-                <img src="img/index_3.png" alt="">
-                <div class="mask"></div>
-            </div>
-            <div id="section04" class="tbox">
-                <img src="img/index_4.png" alt="">
-                <div class="mask"></div>
-            </div>
-            <!--<div id="section05" class="tbox">
-                <img src="img/index_5.png"> 
-                <div class="mask"></div>
-            </div>-->
-            <div class="nav_btn">
-                <ul>
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="arrow">
-                    <a href=""> <img src="img/prev.png" alt=""></a>
-                    <a href=""> <img src="img/next.png" alt=""></a>
+        <div class="pW" id="f-page-wrap">
+            <div class="tbox"><img src="img/index_1.png" alt="" style="opacity: 0.8"></div>
+            <div class="tbox"><img src="img/index_2.png" alt="" style="opacity: 0.8"></div>
+            <div class="tbox"><img src="img/index_3.png" alt="" style="opacity: 0.8"></div>
+            <div class="tbox"><img src="img/index_4.png" alt="" style="opacity: 0.8"></div>
+
+
+            <footer class="indexF">
+                <div class="foot" id="foorter">
+                    <h3><a href=""><img src="img/logowww.png" alt=""></a></h3>
+
+                    <address>
+                        상호명 : 사랑그리기
+                        대표 : 김아름
+                        사업자 등록번호 : 594-10-00955
+                        전화번호 : 010-6512-6743
+                        이메일 : ttlpink@naver.com
+                        주소 : 경기 가평군 북면 가화로 1144-299 (제령리)
+                    </address>
+
+                    <div class="f-sns">
+                        <a href="#" target="_blank"> <img src="img/instagram_w.png" alt="" target="_blank"></a>
+                    </div>
+
                 </div>
+                <div class="top_btn" style="cursor:pointer;">
+                    <a><img src="img/top.png" alt=""></a>
+                </div>
+            </footer>
+        </div>
+        <div class="nav_btn">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="arrow">
+                <a class="prev"> <img src="img/prev.png" alt=""></a>
+                <a class="next"> <img src="img/next.png" alt=""></a>
             </div>
         </div>
+
     </div>
 
+
+
     <script>
-        /*================================*/
-        var conEle = document.querySelectorAll('.pW div');
-        var conPos = [];
-        var first = 0,
-            last = 0;
-        var idx = 0;
+        var asideEl = document.querySelector('.pW footer .top_btn a');
+        var asideTop = asideEl.offset;
 
-        conEle.forEach(function(el) {
-            conPos.push(el.offsetTop);
-        });
 
-        var bln = true,
-            udBln;
+        asideEl.addEventListener('click', function() {
+            window.scrollTo({
+                left: 0,
+                top: 0
+                /*behavior: 'smooth'*/
+            });
+        })
 
-        function upDown() {
-            first = this.scrollY;
-            udBln = first > last;
-            last = first;
-        }
+
         window.addEventListener('scroll', function() {
-            upDown();
-
-            if (bln) {
-
-                if (udBln) {
-                    idx++;
-                } else {
-                    idx--;
-                }
-
-                console.log(idx);
-
-                setTimeout(function() {
-                    bln = true;
-                }, 1000)
-                window.scrollTo(0, conPos[idx]);
-                /* -- -- > 최종목표*/
-                bln = false;
+            if (this.scrollY > window.innerHeight) {
+                asideEl.classList.add('active');
+            } else {
+                asideEl.classList.remove('active');
             }
+        })
 
-        });
 
+        //        window.addEventListener('DOMContentLoaded', function() {
+        //            var asideEl = document.querySelector('aside');
+        //            var asideTop = asideEl.offsetTop;
+        //
+        //
+        //            asideEl.addEventListener('click', function() {
+        //                window.scrollTo({
+        //                    left: 0,
+        //                    top: 0
+        //                    /*behavior: 'smooth'*/
+        //                });
+        //            })
+        //
+        //
+        //            window.addEventListener('scroll', function() {
+        //                if (this.scrollY > window.innerHeight) {
+        //                    asideEl.classList.add('active');
+        //                } else {
+        //                    asideEl.classList.remove('active');
+        //                }
+        //            })
+        //
+        //
+        //            /*문서의 높이 알아보기*/
+        //            var domH = document.documentElement.offsetHeight;
+        //
+        //            console.log(domH);
+        //
+        //            /*브라우저의 높이 알아보기*/
+        //            console.log(domH - window.innerHeight)
+        //
+        //
+        //        });
     </script>
 
-
-    <footer>
-        <div class="foot">
-            <h3><a href=""><img src="img/logowww.png" alt=""></a></h3>
-
-            <address>
-                상호명 : 사랑그리기
-                대표 : 김아름
-                사업자 등록번호 : 594-10-00955
-                전화번호 : 010-6512-6743
-                이메일 : ttlpink@naver.com
-                주소 : 경기 가평군 북면 가화로 1144-299 (제령리)
-            </address>
-
-            <div class="f-sns">
-                <a href="#" target="_blank"> <img src="img/instagram_w.png" alt="" target="_blank"></a>
-            </div>
-
-        </div>
-        <div class="top_btn">
-            <a><img src="img/top.png" alt=""></a>
-        </div>
-    </footer>
-
-    <script>
-            var asideEl = document.querySelector('.top_btn a');
-            var asideTop = asideEl.offsetTop;
-
-
-            asideEl.addEventListener('click', function() {
-                window.scrollTo({
-                    left: 0,
-                    top: 0
-                    /*behavior: 'smooth'*/
-                });
-            })
-
-
-            window.addEventListener('scroll', function() {
-                if (this.scrollY > window.innerHeight) {
-                    asideEl.classList.add('active');
-                } else {
-                    asideEl.classList.remove('active');
-                }
-            })
-
-    </script>
-
-</body>
-
-</html>
+</body></html>

@@ -802,12 +802,15 @@ header {
 /*===============================*/
 
 footer {
-    position: relative;
+    left: 0; 
+    bottom: 0%;
     width: 100%;
     padding: 50px 0;
     background: #323842;
     z-index: 200;
+    height: 400px;
 }
+
 
 .foot {
     width: 100%;
@@ -850,15 +853,17 @@ footer {
     margin: 0 auto;
 }
 
-.top_btn {
+ footer .top_btn {
     position: absolute;
-    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    bottom:50px;
     right: 20px;
     z-index: 100;
 }
 
-.top_btn a {
+ footer .top_btn a {
     display: block;
 }
 
-.top_btn a img {}
+.pW footer .top_btn a img {}

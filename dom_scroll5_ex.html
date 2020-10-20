@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/dom_scroll5_ex.js"></script>
+</head>
+
+<body>
+
+    <!--우측하단 Top-->
+
+    <style>
+        body,html {
+            margin: 0;
+            overflow:hidden;
+        }
+        h2 {margin: 0;}
+        
+        .con{
+            position:absolute;
+            width:500%;
+            left:0; top:0;
+            transition:1s;
+            display:flex;
+        }
+        .con div{
+            width:20%;
+            height:100vh;
+        }
+        .con div:nth-of-type(2n){background:#eee;}
+        .indi{
+            position:absolute;
+            bottom:10%; left:0; 
+            width:100%;
+            text-align:center;
+        }
+        .indi a{
+            width:15px;height:15px;
+            border-radius: 15px;
+            background:#999;
+            transition:.5s;
+            display:inline-block;
+            margin:0 3px;
+        }
+        .indi a.active{
+            background:#f00;
+            width:40px;
+        }
+    </style>
+
+    <article class="con-list">
+<!--        <h2>콘텐츠 서서히 나타남</h2>-->
+        <div class="con">
+            <div>con01</div>
+            <div>con02</div>
+            <div>con03</div>
+            <div>con04</div>
+            <div>con05</div>
+        </div>
+        
+        <div class="indi"></div>
+    </article>
+
+
+
+
+
+
+
+</body></html>
