@@ -89,25 +89,8 @@ $(function () {
         }
     });
 
-
-
-    /* $(window).scroll(function() {
-         if ($(this).scrollTop() > 200) {
-             $('.pW .indexF .top_btn a').fadeIn();
-         } else {
-             $('.pW .indexF .top_btn a').fadeOut();
-         }
-     });*/
-
-    /* $(".pW .indexF .top_btn a").click(function () {
-         $('html, body').animate({
-             winTop
-         }, 400);
-         return false;
-     });*/
-
     $('.pW .indexF .top_btn a').click(function () {
-        var htmloffset = $('html').offset();
+        var htmloffset = $('window').offset();
         console.log(htmloffset);
         $('html, body').animate({
             scrollTop: htmloffset.top

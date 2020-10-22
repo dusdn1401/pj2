@@ -4,7 +4,7 @@
 #f-page {
     position: relative;
     overflow: hidden;
-    /*    opacity: 0.8;*/
+    opacity: 0.8;
 }
 
 #f-page .tbox {

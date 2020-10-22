@@ -3,7 +3,7 @@
 #f-page {
     position: relative;
     overflow: hidden;
-    /*    opacity: 0.8;*/
+    opacity: 0.8;
 }
 
 #f-page .tbox {
@@ -95,7 +95,7 @@
 }
 
 .contents .room > p button:nth-of-type(2) {
-    right:50.5%;
+    right: 50.5%;
     top: 38%;
 }
 
