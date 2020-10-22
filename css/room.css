@@ -139,87 +139,9 @@
     background: white;
     color: #323842;
     border: 1px solid #323842;
+
 }
 
-.contents .slide {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-.contents .slide .slide_show {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.contents .slide .slide_show li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 50;
-}
-
-.contents .slide .slide_show li .active {
-    z-index: 100;
-}
-
-.contents .slide .arrow {
-    position: absolute;
-    top: 50%;
-    margin-top: -42px;
-    z-index: 300;
-}
-
-.contents .slide .arrow a {
-    display: block;
-}
-
-.contents .slide .prev {
-    left: 0;
-}
-
-.contents .slide .next {
-    right: 0;
-}
-
-.contents .slide .nav {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    z-index: 300;
-}
-
-.contents .slide .nav li {
-    float: left;
-    width: 16px;
-    height: 33px;
-    margin-right: 5px;
-}
-
-.contents .slide .nav li a {
-    width: 8px;
-    height: 33px;
-    display: block;
-    background: url(http://gonylab5.speedgabia.com/havet/final/images/blt_row.png) no-repeat left top;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-transition: transform 0.5s ease;
-    -moz-transition: transform 0.5s ease;
-}
-
-.contents .slide .nav li a .active {
-    -webkit-transform: rotate(-24deg);
-    transform: rotate(-24deg);
-    -webkit-transition: rotate(-24deg);
-    -moz-transition: rotate(-24deg);
-}
 
 /*# sourceMappingURL=room.css.map */

@@ -447,14 +447,14 @@ footer {
     margin: 0 auto;
 }
 
-.foot h3 {
+.foot .flogo {
     width: 250px;
     margin: 0 auto;
 }
 
-.foot h3 a {}
+.foot .flogo a {}
 
-.foot h3 a img {}
+.foot .flogo a img {}
 
 .foot address {
     padding: 35px 0 25px;
