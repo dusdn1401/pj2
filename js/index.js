@@ -33,9 +33,9 @@ $(function () {
 
         if (e.wheelDelta < 0) {
             //down
-
             if (idx < divEle.length - 1) {
                 idx++;
+                console.log('a')
             } else {
                 a = 1
             }
@@ -70,37 +70,51 @@ $(function () {
 
 
 
-        asideEl.addEventListener('click', function () {
-            console.log('a')
-            window.scrollTo({
-                left: 0,
-                top: 0
-                /*behavior: 'smooth'*/
-            });
-
-        });
     });
 
-
-    /*   prev.addEventListener('click', function () {
-        if (idx != 0) idx--;
+    $(".prev").on("click", function () {
         console.log(idx)
-
-    })
-    next.addEventListener('click', function () {
-        if (idx != divEle.length - 1) idx++;
-    })
-
-*/
-
-    $(function () {
-        $(".prev").on("click", function () {
-            $(".pW .tbox").slideUp(idx--); // id가 "divBox"인 요소를 0.5초에 걸쳐 올라가면서 사라지게 함.
-        });
-        $(".next").on("click", function () {
-            $(".pW .tbox").slideDown(idx++); // id가 "divBox"인 요소를 0.3초에 걸쳐 내려오면서 나타나게 함.
-        });
+        if (idx > 0) {
+            idx--;
+            conEle.style.transform = "translateY(-" + conPos[idx] + "px)";
+        }
     });
+
+
+    $(".next").on("click", function () {
+        console.log(idx)
+        if (idx < 3) {
+            idx++;
+            conEle.style.transform = "translateY(-" + conPos[idx] + "px)";
+        }
+    });
+
+
+
+    /* $(window).scroll(function() {
+         if ($(this).scrollTop() > 200) {
+             $('.pW .indexF .top_btn a').fadeIn();
+         } else {
+             $('.pW .indexF .top_btn a').fadeOut();
+         }
+     });*/
+
+    /* $(".pW .indexF .top_btn a").click(function () {
+         $('html, body').animate({
+             winTop
+         }, 400);
+         return false;
+     });*/
+
+    $('.pW .indexF .top_btn a').click(function () {
+        var htmloffset = $('html').offset();
+        console.log(htmloffset);
+        $('html, body').animate({
+            scrollTop: htmloffset.top
+        }, 400);
+    });
+
+
 
 
 });

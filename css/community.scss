@@ -35,7 +35,7 @@
     }
 
     .mtb {
-        width: 100%;
+        width: 60%;
         margin: 0 auto;
 
         ul {
@@ -50,33 +50,48 @@
         }
 
         .t1 {
-            text-align: center;
-            width: 100%;
-            margin: 80px auto;
-            table {
-                margin: 0 auto;
-                width: 60%;
-                font-size: 20px;
-                padding: 60px 0 0;
-
-                caption {}
-
-                thead {
-                    background: #ddd;
-                    
-
-                    tr {
-                        line-height: 2em; 
-                        th {border-radius: 10px;}
+            table{
+                h3{}
+                tr{
+                    width: 100%;
+                    margin: 0 auto;
+                    display: block;
+                    th{
+                        border-bottom: 1px solid #ddd;
+                        padding: 16px 0;
+                        position: relative;
+                        text-align: left;
+                        width: 100%;
+                        display: block;
+                    }
+                    th:before{
+                        content:'v .' ;
+                    }
+                    th:after{
+                        content: '';
+                        background: url('img/cc.svg') right center no-repeat;
+                        background-size: 15px;
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: rotate(0deg) translateY(-50%);
+                        transform-origin: 50% 0;
+                    }
+                    th.active:after{
+                        transform: rotate(180deg) translateY(-50%);
+                    }
+                    td{padding: 100px;
+                        margin: 0;
+                        background: #ddd;
+                        display: none;
+                        img{width: 50%;
+                            ;}
                     }
                 }
-
-                tbody {
-                    tr {
-                        td {padding: 10px 5px;
-                        border-bottom: 1px solid #ddd; line-height: 2em;}
-                    }
-                }
+            }
             }
         }
 
@@ -90,7 +105,10 @@
                 font-size: 20px;
                 padding: 60px 0 0;
 
-                caption {}
+                h3{
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
 
                 thead {
                     background: #ddd;
@@ -133,8 +151,4 @@
 
     }
     
-    
 
-
-
-}

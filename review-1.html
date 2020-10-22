@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>intro</title>
+    <title>community</title>
+    <link href="css/review-1.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/fa.png">
-    <link href="css/road.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body id="index">
@@ -17,7 +19,7 @@
             </h1>
             <div class="top_menu">
                 <a href="#">
-                    <img src="img/menu.png" alt=""> </a>
+                    +<img src="img/menu.png" alt=""> </a>
             </div>
             <div class="top_sns">
                 <a href="#"><img src="img/instagram_w.png" alt=""> </a>
@@ -107,7 +109,7 @@
 
                 <div class="bg">
                     <a href="#">
-                        <img src="img/20200810_103711.png" alt=""></a></div>
+                        <img src="img/f1.png" alt=""></a></div>
             </div>
         </div>
     </div>
@@ -126,94 +128,72 @@
         clo.addEventListener('click', function() {
             gnb.classList.remove('active');
         })
-
     </script>
     <div id="f-page" class="fpage">
         <div id="f-page-wrap" class="pW">
             <div id="section01" class="tbox">
-                <img src="img/index_1.png" alt="">
+                <img src="img/index_4.png" alt="">
                 <div class="mask"></div>
             </div>
         </div>
     </div>
     <!--=========================================-->
-    <main>
-        <h2> <span>LOCATION</span><b>오시는길</b></h2>
+    <div class="main">
+        <h2> 이용후기</h2>
+        <div class="table">
+            <table>
 
-        <div class="tabs location">
-            <p class="info_address">
-                <span><b>지번</b> | 경기 가평군 북면 제령리92</span>
-                <span><b>도로명</b> | 경기도 가평군 북면 가화로 1144-333</span>
-            </p>
+                <thead>
+                    <tr>
+                        <td>제목</td>
+                        <td>작성자</td>
+                        <td>작성일</td>
+                        <td>조회</td>
+                    </tr>
+                </thead>
 
-            <!--            <div id="map"></div>-->
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1597376609241" class="root_daum_roughmap" style="width: 70%;"></div>
+                <tbody>
+                    <tr>
+                        <th>18개월 아기랑 여행 잘 쉬다 왔어요:)</th>
+                        <th>나미</th>
+                        <th>2020.05.30</th>
+                        <th>150</th>
+                    </tr>
+                    <tr>
+                        <!--                        <th></th>-->
+                        <!--<th></th>
+                        <th><img src="img/65.png" alt="">첨부파일</th>
+                        <th>펜션.jpg</th>-->
+                    </tr>
 
-            <!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    <tr>
+                        <td colspan="4">
+                            몇년전에 부모님과 와보고 너무 좋아서 남편이 이번에 또 가자고 해서 이번에는 아기랑 저희가족만 또 놀러갑니다^^ ㅎㅎ
 
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp": "1597376609241",
-                    "key": "2znvk",
-                    "mapWidth": "1000px",
-                    "mapHeight": "500px"
-                }).render();
+                            그때 방이 하나밖에 없는데 아이땜에 인원이 한명 초과됐었는데 사장님이 배려해주셔서 즐겁게 놀다 갔었어요(2-3년전)
 
-            </script>
+                            기대하며 방금 예약했습니다^^ㅎㅎ
 
+                            저는 너무 친절하셨던 기억만 있어서 저도 글 남겨봅니다!
+                            <img src="img/44.png" alt="">
+                            <hr>
+                            <hr>
+                        </td>
 
-            <!--카카오 지도 appkey -->
-            <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d8cbf2420a78353940d7122011e1af33"></script>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d8cbf2420a78353940d7122011e1af33&libraries=services"></script>
--->
-            <!-- 지도 좌표 -->
-            <!--<script type="text/javascript">
-                var mapContainer = document.getElementById('map'),
-                    mapOption = {
-                        center: new daum.maps.LatLng(36.6087609, 129.4137815),
-                        level: 5
-                    };
-                var map = new daum.maps.Map(mapContainer, mapOption);
-                var markerPosition = new daum.maps.LatLng(36.6087609, 129.4137815);
-                var marker = new daum.maps.Marker({
-                    position: markerPosition
-                });
-                marker.setMap(map);
-                map.setZoomable(false);
-                var mapTypeControl = new daum.maps.MapTypeControl();
-                map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPLEFT);
-                var zoomControl = new daum.maps.ZoomControl();
-                map.addControl(zoomControl, daum.maps.ControlPosition.LEFT);
-            </script>-->
+                    </tr>
 
-            <p class="info_location">
+                </tbody>
 
-                <span>[네비검색]</span>
-                <b>지번</b> | 경기 가평군 북면 제령리92
-                &nbsp;
-                <b>도로명</b> | 경기도 가평군 북면 가화로 1144-333<br /><br />
-
-                <span>[기차이용]</span>
-                청량리역에서 경춘선이용, 가평역 하차 <br /><br />
-
-                <span>[버스이용]</span>
-                동서울버스터미널발 - 춘천, 가평, 화천방향<br />
-                <br />
-                <b>※성수기 픽업이용은 제한적일 수도 있습니다.</b><br /><br />
-
-            </p>
+            </table>
         </div>
 
 
-    </main>
+        <div class="button">
+            <a href="community.html">목록</a>
+            <a href="write.html">글쓰기</a>
+        </div>
 
+    </div>
     <!--===========================================-->
     <footer>
         <div class="foot">
@@ -259,9 +239,6 @@
                 asideEl.classList.remove('active');
             }
         })
-
     </script>
 
-</body>
-
-</html>
+</body></html>

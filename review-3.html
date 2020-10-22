@@ -3,21 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>intro</title>
+    <title>community</title>
+    <link href="css/review-3.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/fa.png">
-    <link href="css/road.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body id="index">
     <div id="header">
         <div class="top" id="top">
             <h1>
-                <a href="">
+                <a href="index.html">
                     <img src="img/logowww.png" alt=""></a>
             </h1>
             <div class="top_menu">
                 <a href="#">
-                    <img src="img/menu.png" alt=""> </a>
+                    +<img src="img/menu.png" alt=""> </a>
             </div>
             <div class="top_sns">
                 <a href="#"><img src="img/instagram_w.png" alt=""> </a>
@@ -82,11 +84,13 @@
                                 </a></li>
                         </ul>
                     </li>
-                    <!--<li class="glt_04"><a>RESERVATION</a>
+                    <!--
+                    <li class="glt_04"><a>RESERVATION</a>
                         <ul>
                             <li><a><span class="en">RESERVATION</span><span class="ko">실시간 예약하기</span></a></li>
                         </ul>
-                    </li>-->
+                    </li>
+-->
                     <li class="glt_05"><a>COMMUNITY </a>
                         <ul>
                             <li><a href="community.html">
@@ -107,7 +111,7 @@
 
                 <div class="bg">
                     <a href="#">
-                        <img src="img/20200810_103711.png" alt=""></a></div>
+                        <img src="img/f1.png" alt=""></a></div>
             </div>
         </div>
     </div>
@@ -126,94 +130,70 @@
         clo.addEventListener('click', function() {
             gnb.classList.remove('active');
         })
-
     </script>
     <div id="f-page" class="fpage">
         <div id="f-page-wrap" class="pW">
             <div id="section01" class="tbox">
-                <img src="img/index_1.png" alt="">
+                <img src="img/index_4.png" alt="">
                 <div class="mask"></div>
             </div>
         </div>
     </div>
     <!--=========================================-->
-    <main>
-        <h2> <span>LOCATION</span><b>오시는길</b></h2>
+    <div class="main">
+        <h2> 이용후기</h2>
+        <div class="table">
+            <table>
 
-        <div class="tabs location">
-            <p class="info_address">
-                <span><b>지번</b> | 경기 가평군 북면 제령리92</span>
-                <span><b>도로명</b> | 경기도 가평군 북면 가화로 1144-333</span>
-            </p>
+                <thead>
+                    <tr>
+                        <td>제목</td>
+                        <td>작성자</td>
+                        <td>작성일</td>
+                        <td>조회</td>
+                    </tr>
+                </thead>
 
-            <!--            <div id="map"></div>-->
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1597376609241" class="root_daum_roughmap" style="width: 70%;"></div>
+                <tbody>
+                    <tr>
+                        <th>너무나 만족했던 숙소!</th>
+                        <th>조지</th>
+                        <th>2020.07.05</th>
+                        <th>86</th>
+                    </tr>
+                    <tr>
+                        <!--                        <th></th>-->
+                        <!--<th></th>
+                        <th><img src="img/65.png" alt="">첨부파일</th>
+                        <th>펜션.jpg</th>-->
+                    </tr>
 
-            <!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    <tr>
+                        <td colspan="4">
+                            찾아가는 길이 조금 힘듭니다.
+                            외진 곳에 있어서 뭔가 도시의 삶에서 벗어나 자연과 어우러진 산속에서 며칠 쉬고 싶다면 추천합니다.
+                            저희는 카라반에서 묵었는데 여기는 족욕스파가 있고 그 위에는 테이블과 옆에는 밖이 보이는 창문이 있습니다.
+                            족욕스파 위에 고기를 구울 수 있는 그릴(사용시 1만원 추가)이 설치되어 있어서 고기를 구워먹으면서 족욕을 즐길 수 있습니다.
+                            강추!
+                            <img src="img/re3.png" alt="">
+                            <hr>
+                            <hr>
+                        </td>
 
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp": "1597376609241",
-                    "key": "2znvk",
-                    "mapWidth": "1000px",
-                    "mapHeight": "500px"
-                }).render();
+                    </tr>
 
-            </script>
+                </tbody>
 
-
-            <!--카카오 지도 appkey -->
-            <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d8cbf2420a78353940d7122011e1af33"></script>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d8cbf2420a78353940d7122011e1af33&libraries=services"></script>
--->
-            <!-- 지도 좌표 -->
-            <!--<script type="text/javascript">
-                var mapContainer = document.getElementById('map'),
-                    mapOption = {
-                        center: new daum.maps.LatLng(36.6087609, 129.4137815),
-                        level: 5
-                    };
-                var map = new daum.maps.Map(mapContainer, mapOption);
-                var markerPosition = new daum.maps.LatLng(36.6087609, 129.4137815);
-                var marker = new daum.maps.Marker({
-                    position: markerPosition
-                });
-                marker.setMap(map);
-                map.setZoomable(false);
-                var mapTypeControl = new daum.maps.MapTypeControl();
-                map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPLEFT);
-                var zoomControl = new daum.maps.ZoomControl();
-                map.addControl(zoomControl, daum.maps.ControlPosition.LEFT);
-            </script>-->
-
-            <p class="info_location">
-
-                <span>[네비검색]</span>
-                <b>지번</b> | 경기 가평군 북면 제령리92
-                &nbsp;
-                <b>도로명</b> | 경기도 가평군 북면 가화로 1144-333<br /><br />
-
-                <span>[기차이용]</span>
-                청량리역에서 경춘선이용, 가평역 하차 <br /><br />
-
-                <span>[버스이용]</span>
-                동서울버스터미널발 - 춘천, 가평, 화천방향<br />
-                <br />
-                <b>※성수기 픽업이용은 제한적일 수도 있습니다.</b><br /><br />
-
-            </p>
+            </table>
         </div>
 
 
-    </main>
+        <div class="button">
+            <a href="community.html">목록</a>
+            <a href="write.html">글쓰기</a>
+        </div>
 
+    </div>
     <!--===========================================-->
     <footer>
         <div class="foot">
@@ -259,9 +239,6 @@
                 asideEl.classList.remove('active');
             }
         })
-
     </script>
 
-</body>
-
-</html>
+</body></html>

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>room</title>
+    <link rel="icon" href="img/fa.png">
     <link href="css/room.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
+
 </head>
 
 <body id="index">
@@ -43,55 +44,61 @@
                 <a href="#"><img src="img/instagram_b.png" alt=""></a></div>
         </div>
         <div id="gnb" class="gnb" style="height: 100%; transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;">
-            <h2><a href="#"> <img src="img/logowww.png" alt=""> </a></h2>
+            <h2><a href="index.html"> <img src="img/logowww.png" alt=""> </a></h2>
             <div class="gnb_lst" style="opacity: 1; transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;">
                 <ul>
                     <li class="glt_01">
-                        <a href="">ABOUT</a>
+                        <a>ABOUT</a>
                         <ul>
-                            <li><a href="">
+                            <li><a href="int.html">
                                     <span>인사말</span></a></li>
-                            <li><a href="">
+                            <li><a href="road.html">
                                     <span class="en">LOCATION</span>
                                     <span class="ko">오시는길</span></a></li>
                         </ul>
                     </li>
-                    <li class="glt_02"> <a>ROOMS</a>
+                    <li class="glt_02">
+                        <a>ROOMS</a>
                         <ul>
-                            <li><a href=""><span>예그리나</span></a></li>
-                            <li><a href=""><span>한샘가온</span></a></li>
-                            <li><a href=""><span>두빛나래</span></a></li>
-                            <li><a href=""><span>플라토닉</span></a></li>
+                            <li>
+                                <a href="room.html">
+                                    <span class="en">ROOMS</span>
+                                    <span class="ko">객실</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
+
                     <li class="glt_03"><a>SERVICE</a>
                         <ul>
-                            <li><a>
+                            <li><a href="service.html">
                                     <span class="en">SERVICE</span>
                                     <span class="ko">서비스</span>
                                 </a></li>
-                            <li><a>
+                            <li><a href="facilities.html">
                                     <span class="en">FACILITIES</span>
                                     <span class="ko">부대시설</span>
                                 </a></li>
-                            <li><a>
+                            <li><a href="travel.html">
                                     <span class="en">TRAVEL</span>
                                     <span class="ko">주변여행지</span>
                                 </a></li>
                         </ul>
                     </li>
+                    <!--
                     <li class="glt_04"><a>RESERVATION</a>
                         <ul>
                             <li><a><span class="en">RESERVATION</span><span class="ko">실시간 예약하기</span></a></li>
                         </ul>
                     </li>
+-->
                     <li class="glt_05"><a>COMMUNITY </a>
                         <ul>
-                            <li><a>
+                            <li><a href="community.html">
                                     <span class="en">NOTICE</span>
                                     <span class="ko">공지사항</span></a></li>
 
-                            <li><a>
+                            <li><a href="community.html">
                                     <span class="en">REVIEW</span>
                                     <span class="ko">후기</span></a></li>
                         </ul>
@@ -124,12 +131,11 @@
         clo.addEventListener('click', function() {
             gnb.classList.remove('active');
         })
-
     </script>
     <div id="f-page" class="fpage">
         <div id="f-page-wrap" class="pW">
             <div id="section01" class="tbox">
-                <img src="img/r-1-5.png" alt="">
+                <img src="img/index_2.png" alt="">
                 <div class="mask"></div>
             </div>
         </div>
@@ -137,82 +143,254 @@
     <!--=========================================-->
 
     <script>
-        var conEle = document.querySelector('.con');
-        var divEle = document.querySelectorAll('.con div');
-        var indi = document.querySelector('.indi');
-        var move = 0;
+        $(function() {
+            $("#tabs").tabs();
+            /*==============================*/
 
-        //indi
-        divEle.forEach(function() {
-            var aTag = document.createElement('a');
-            indi.appendChild(aTag);
-        });
-        var indiEle = document.querySelectorAll('.indi a');
-        indiEle[0].classList.add('active');
+            $('.room figure').not(':first').hide();
+            var idx = 0;
+            var loop;
 
-        setTimeout(function() {
-            window.scrollTo(0, 0);
-        }, 10);
+            //img change
+            function fade(p) {
+                $('.room figure').eq(idx).fadeOut(1000);
+                if (p == 'next' || p == undefined) {
+                    idx++
+                } else {
+                    idx--;
+                }
+                update();
+                $('.room figure').eq(idx).fadeIn(2000);
+            }
+            //idx setting
+            function update() {
+                var len = $('.room figure').length;
+                if (idx >= len) idx = 0;
+                if (idx == -1) idx = len - 1;
+            }
+            //auto clear
+            function clearFun() {
+                clearInterval(loop);
+            }
+            //auto fade
+            function interFun() {
+                loop = setInterval(fade, 3000);
+            }
+            //prev next
+            function btn() {
+                if ($(this).index() == 0) {
+                    fade('prev');
+                } else {
+                    fade('next');
+                }
+            }
 
-        divEle.forEach(function(el, idx) {
-            el.addEventListener('mousewheel', function(e) {
-                move = el.nextElementSibling.offsetLeft;
-                indiEle[idx].classList.remove('active');
-                indiEle[idx].nextElementSibling.classList.add('active')
-
-                conEle.style.transform = "translateX(-" + move + "px)";
+            //mouse over out (auto start, auto stop)
+            $('.room div, button').on({
+                mouseenter: clearFun,
+                mouseleave: interFun
             });
+
+            //prev,next click event
+            $('button').on('click', btn);
+
+            interFun();
+
+
+
         });
-
     </script>
-
-
     <div class="contents">
-        <h2> 예그리나 (제트스파) </h2>
-        <div class="room">
-            <img src="img/r-1.png" alt="">
-            <div class="info">
-                <h3>객실 구성</h3>
-                <p>면적 : 약82.5㎡ (25평형)
-                    유형 : 커플전용
-                    형태 : 복층형, 독채
-                    구성 : 제트스파, 개별 실내외 바비큐장, 개별테라스
-                    인원 : 2인 기준(최대 인원 3인)
-                    비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
-                    에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
-                    전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구</p>
-                <div class="button"> <a href=""> 예약하기 </a> </div>
+        <h2> 객실 정보 </h2>
+        <div id="tabs" class="mtb">
+            <ul class="tt">
+                <li><a href="#tabs-1">예그리나</a></li>
+                <li><a href="#tabs-2">두빛나래</a></li>
+                <li><a href="#tabs-3">루나</a></li>
+                <li><a href="#tabs-4">솔</a></li>
+                <li><a href="#tabs-5">에로스</a></li>
+                <li><a href="#tabs-6">아가페</a></li>
+            </ul>
+            <div id="tabs-1" class="room">
+                <div>
+                    <figure><img src="img/r-1.jpg" alt=""></figure>
+                    <figure><img src="img/r-1-2.png"></figure>
+                    <figure><img src="img/r-1-3.png"></figure>
+                    <figure><img src="img/r-1-1.png"></figure>
+                    <figure><img src="img/r-1-4.png"></figure>
+                </div>
+                <p>
+                    <button>《 </button>
+                    <button> 》</button>
+                </p>
+
+                <div class="info">
+                    <h3>예그리나</h3>
+                    <p>면적 : 약82.5㎡ (25평형)
+                        유형 : 커플전용
+                        형태 : 복층형, 독채
+                        구성 : 제트스파, 개별 실내외 바비큐장, 개별테라스
+                        인원 : 2인 기준(최대 인원 3인)
+                        비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
+                        에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
+                        전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구
+                        입실시간: 오후 4시분 이후
+                        퇴실시간: 오후 1시 이전
+                    </p>
+                    <div class="button"> <a href=""> 예약하기 </a> </div>
+                </div>
             </div>
-        </div>
 
-        <div class="slide" id="slide" style="height: 903px">
-            <ul class="slide_show">
-                <li id="slide_01" class="active" style="opacity: 1"><img src="img/r-1-1.png" alt=""></li>
-                <li id="slide_02"><img src="img/r-1-2.png" alt=""></li>
-                <li id="slide_03"><img src="img/r-1-3.png" alt=""></li>
-                <li id="slide_04"><img src="img/r-1-4.png" alt=""></li>
-                <li id="slide_05"><img src="img/r-1-5.png" alt=""></li>
-            </ul>
+            <div id="tabs-2" class="room">
+                <div>
+                    <figure><img src="img/r-2.jpg" alt="두빛"></figure>
+                    <figure><img src="img/r-2-1.png" alt="두빛"></figure>
+                    <figure><img src="img/r-2-2.png" alt="두빛"></figure>
+                    <figure><img src="img/r-2-3.png" alt="두빛"></figure>
+                    <figure><img src="img/r-2-4.png" alt="두빛"></figure>
+                </div>
+                <p>
+                    <button>《 </button>
+                    <button> 》</button>
+                </p>
+                <div class="info">
+                    <h3>두빛나래</h3>
+                    <p>면적 : 약82.5㎡ (25평형)
+                        유형 : 커플전용
+                        형태 : 복층형, 독채
+                        구성 : 히노끼스파, 개별 실내외 바비큐장, 개별테라스
+                        인원 : 2인 기준(최대 인원 4인)
+                        비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
+                        에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
+                        전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구
+                        입실시간: 오후 4시 이후
+                        퇴실시간: 오후 1시 이전
+                    </p>
+                    <div class="button"> <a href=""> 예약하기 </a> </div>
+                </div>
+            </div>
 
-            <div class="prev arrow"></div>
-            <div class="next arrow"></div>
+            <div id="tabs-3" class="room">
+                <div>
+                    <figure><img src="img/r-3.png"></figure>
+                    <figure><img src="img/r-3-2.png"></figure>
+                    <figure><img src="img/r-3-3.png"></figure>
+                    <figure><img src="img/r-3-4.png"></figure>
+                    <figure><img src="img/r-3-5.png"></figure>
+                </div>
+                <p>
+                    <button>《 </button>
+                    <button> 》</button>
+                </p>
+                <div class="info">
+                    <h3>루나</h3>
+                    <p>면적 : 약39.6㎡ (12평형)
+                        유형 : 커플전용
+                        형태 : 독채, 원룸, 카라반
+                        구성 : 제트스파, 개별 실내외 바비큐장, 개별테라스
+                        인원 : 2인 기준(최대 인원 3인)
+                        비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
+                        에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
+                        전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구
+                        입실시간: 오후 2시 30분 이후
+                        퇴실시간: 오전 11시 이전
+                    </p>
+                    <div class="button"> <a href=""> 예약하기 </a> </div>
+                </div>
+            </div>
 
-            <ul class="nav">
-                <li><a href="" class="active"></a></li>
-                <li><a href="" class="active"></a></li>
-                <li><a href="" class="active"></a></li>
-                <li><a href="" class="active"></a></li>
-                <li><a href="" class="active"></a></li>
-            </ul>
+
+            <div id="tabs-4" class="room">
+                <div>
+                    <figure><img src="img/r-4.png"></figure>
+                    <figure><img src="img/r-4-1.png"></figure>
+                    <figure><img src="img/r-4-2.png"></figure>
+                    <figure><img src="img/r-4-3.png"></figure>
+                    <figure><img src="img/r-4-4.png"></figure>
+                </div>
+                <p>
+                    <button>《 </button>
+                    <button> 》</button>
+                </p>
+                <div class="info">
+                    <h3>솔</h3>
+                    <p>면적 : 약39.6㎡ (12평형)
+                        유형 : 커플전용
+                        형태 : 독채, 원룸, 카라반
+                        구성 : 제트스파, 개별 실내외 바비큐장, 개별테라스
+                        인원 : 2인 기준(최대 인원 3인)
+                        비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
+                        에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
+                        전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구
+                        입실시간: 오후 2시 30분 이후
+                        퇴실시간: 오전 11시 이전
+                    </p>
+                    <div class="button"> <a href=""> 예약하기 </a> </div>
+                </div>
+            </div>
+
+            <div id="tabs-5" class="room">
+                <div>
+                    <figure><img src="img/r-5.jpg"></figure>
+                    <figure><img src="img/r-5-1.png"></figure>
+                    <figure><img src="img/r-1-3.png"></figure>
+                </div>
+                <p>
+                    <button>《 </button>
+                    <button> 》</button>
+                </p>
+                <div class="info">
+                    <h3>에로스</h3>
+                    <p>면적 : 약82.5㎡ (25평형)
+                        유형 : 커플, 가족
+                        형태 : 복층형, 독채
+                        구성 : 월풀스파, 개별 실내외 바비큐장, 개별테라스
+                        인원 : 2인 기준(최대 인원 4인)
+                        비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
+                        에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
+                        전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구
+                        입실시간: 오후 2시 30분 이후
+                        퇴실시간: 오전 11시 이전
+                    </p>
+                    <div class="button"> <a href=""> 예약하기 </a> </div>
+                </div>
+            </div>
+
+            <div id="tabs-6" class="room">
+                <div>
+                    <figure><img src="img/r-6.png"></figure>
+                    <figure><img src="img/r-6-1.png"></figure>
+                    <figure><img src="img/r-1-3.png"></figure>
+                </div>
+                <p>
+                    <button>《 </button>
+                    <button> 》</button>
+                </p>
+                <div class="info">
+                    <h3>아가페</h3>
+                    <p>면적 : 약82.5㎡ (25평형)
+                        유형 : 커플, 가족
+                        형태 : 복층형, 독채
+                        구성 : 제트스파, 개별 실내외 바비큐장, 개별테라스
+                        인원 : 2인 기준(최대 인원 4인)
+                        비품 : 스파, 침대, 흔들의자, 40인치TV, WIFI,
+                        에어컨, 화장대, 드라이기, 아일랜드식탁, 냉장고,
+                        전자레인지, 전기밥솥, 전기쿡탑, 전기주전자, 취사도구
+                        입실시간: 오후 2시 30분 이후
+                        퇴실시간: 오전 11시 이전
+                    </p>
+                    <div class="button"> <a href=""> 예약하기 </a> </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
     </div>
 
-  <!-- <div id="container">
-	<div id="seciton"><div class="visual"></div><div class="scroll"><a href="#"></a></div></div>
-	<div class="contents"><div class="details"></div><div id="slide" class="slide"><ul class="slide_show"></ul></div>
-  -->
 
-   
     <!--===========================================-->
     <footer>
         <div class="foot">
@@ -258,9 +436,6 @@
                 asideEl.classList.remove('active');
             }
         })
-
     </script>
 
-</body>
-
-</html>
+</body></html>

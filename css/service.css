@@ -3,7 +3,7 @@
 #f-page {
     position: relative;
     overflow: hidden;
-    /*    opacity: 0.8;*/
+    opacity: 0.8;
 }
 
 #f-page .tbox {
@@ -37,12 +37,11 @@
 
 .main div figure {
     width: 60%;
-    height: 50%;
     margin: 0 auto;
-    margin-top: 400px;
-    background: black;
+    margin-top: 200px;
+    background: #323842;
     color: #fff;
-    font-size: 2em;
+    font-size: 23px;
     opacity: 1;
     -webkit-transition: 1s;
     transition: 3s;
@@ -52,7 +51,7 @@
 
 .main div figure.active {
     opacity: 1;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .main div figure img {

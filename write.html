@@ -3,21 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>intro</title>
+    <title>write</title>
+    <link href="css/write.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/fa.png">
-    <link href="css/road.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 
-<body id="index">
+
+<body>
+
     <div id="header">
         <div class="top" id="top">
             <h1>
-                <a href="">
+                <a href="index.html">
                     <img src="img/logowww.png" alt=""></a>
             </h1>
             <div class="top_menu">
                 <a href="#">
-                    <img src="img/menu.png" alt=""> </a>
+                    +<img src="img/menu.png" alt=""> </a>
             </div>
             <div class="top_sns">
                 <a href="#"><img src="img/instagram_w.png" alt=""> </a>
@@ -30,8 +36,6 @@
                 <span class="top_tell">010-6512-6743</span>
             </div>
         </div>
-
-
         <div class="nav">
             <div class="nav_logo">
                 <a href="#"><img src="img/logobbb.png" alt=""></a></div>
@@ -65,7 +69,6 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="glt_03"><a>SERVICE</a>
                         <ul>
                             <li><a href="service.html">
@@ -82,11 +85,13 @@
                                 </a></li>
                         </ul>
                     </li>
-                    <!--<li class="glt_04"><a>RESERVATION</a>
+<!--
+                    <li class="glt_04"><a>RESERVATION</a>
                         <ul>
                             <li><a><span class="en">RESERVATION</span><span class="ko">실시간 예약하기</span></a></li>
                         </ul>
-                    </li>-->
+                    </li>
+-->
                     <li class="glt_05"><a>COMMUNITY </a>
                         <ul>
                             <li><a href="community.html">
@@ -107,7 +112,7 @@
 
                 <div class="bg">
                     <a href="#">
-                        <img src="img/20200810_103711.png" alt=""></a></div>
+                        <img src="img/f1.png" alt=""></a></div>
             </div>
         </div>
     </div>
@@ -126,95 +131,62 @@
         clo.addEventListener('click', function() {
             gnb.classList.remove('active');
         })
-
     </script>
     <div id="f-page" class="fpage">
         <div id="f-page-wrap" class="pW">
             <div id="section01" class="tbox">
-                <img src="img/index_1.png" alt="">
+                <img src="img/index_4.png" alt="">
                 <div class="mask"></div>
             </div>
         </div>
     </div>
-    <!--=========================================-->
-    <main>
-        <h2> <span>LOCATION</span><b>오시는길</b></h2>
-
-        <div class="tabs location">
-            <p class="info_address">
-                <span><b>지번</b> | 경기 가평군 북면 제령리92</span>
-                <span><b>도로명</b> | 경기도 가평군 북면 가화로 1144-333</span>
-            </p>
-
-            <!--            <div id="map"></div>-->
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div id="daumRoughmapContainer1597376609241" class="root_daum_roughmap" style="width: 70%;"></div>
-
-            <!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-            <!-- 3. 실행 스크립트 -->
-            <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp": "1597376609241",
-                    "key": "2znvk",
-                    "mapWidth": "1000px",
-                    "mapHeight": "500px"
-                }).render();
-
-            </script>
-
-
-            <!--카카오 지도 appkey -->
-            <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d8cbf2420a78353940d7122011e1af33"></script>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d8cbf2420a78353940d7122011e1af33&libraries=services"></script>
--->
-            <!-- 지도 좌표 -->
-            <!--<script type="text/javascript">
-                var mapContainer = document.getElementById('map'),
-                    mapOption = {
-                        center: new daum.maps.LatLng(36.6087609, 129.4137815),
-                        level: 5
-                    };
-                var map = new daum.maps.Map(mapContainer, mapOption);
-                var markerPosition = new daum.maps.LatLng(36.6087609, 129.4137815);
-                var marker = new daum.maps.Marker({
-                    position: markerPosition
-                });
-                marker.setMap(map);
-                map.setZoomable(false);
-                var mapTypeControl = new daum.maps.MapTypeControl();
-                map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPLEFT);
-                var zoomControl = new daum.maps.ZoomControl();
-                map.addControl(zoomControl, daum.maps.ControlPosition.LEFT);
-            </script>-->
-
-            <p class="info_location">
-
-                <span>[네비검색]</span>
-                <b>지번</b> | 경기 가평군 북면 제령리92
-                &nbsp;
-                <b>도로명</b> | 경기도 가평군 북면 가화로 1144-333<br /><br />
-
-                <span>[기차이용]</span>
-                청량리역에서 경춘선이용, 가평역 하차 <br /><br />
-
-                <span>[버스이용]</span>
-                동서울버스터미널발 - 춘천, 가평, 화천방향<br />
-                <br />
-                <b>※성수기 픽업이용은 제한적일 수도 있습니다.</b><br /><br />
-
-            </p>
-        </div>
-
-
-    </main>
-
     <!--===========================================-->
+
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>제목</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" name="title" required placeholder="글 제목을 입력하세요" minlength="1">
+                </td>
+            </tr>
+
+            <tr>
+                <th>내용</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <textarea minlength="10" required placeholder="내용을 입력해주세요. (최소 10자이상)"></textarea>
+                    <hr>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>첨부파일</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <hr>
+    </div>
+
+
+    <div class="button">
+        <a href="community.html">이전</a>
+        <a href="write-ok.html">등록</a>
+    </div>
+
+    <!--=============================================-->
     <footer>
         <div class="foot">
             <h3><a href=""><img src="img/logowww.png" alt=""></a></h3>
@@ -259,9 +231,6 @@
                 asideEl.classList.remove('active');
             }
         })
-
     </script>
 
-</body>
-
-</html>
+</body></html>
