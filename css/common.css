@@ -276,8 +276,8 @@ header {
 
 .gnb .gnb_lst > ul {
     position: relative;
-    width: 70%;
-    min-width: 1170px;
+    width: 50%;
+    min-width: 70%;
     margin: 200px auto 0;
     overflow: hidden;
     z-index: 100;
@@ -321,7 +321,7 @@ header {
 
 .gnb .gnb_lst > ul > li > a {
     color: #9fbebf;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 20px;
     text-align: center;
     display: block;
@@ -335,6 +335,7 @@ header {
     letter-spacing: 0.1em;
     padding-left: 0.1em;
     transition: .3s color, .3s letter-spacing, .3s padding-left;
+    font-size: 20px;
 }
 
 .gnb .gnb_lst > ul > li ul li a:hover {
