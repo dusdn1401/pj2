@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>사랑그리기펜션</title>
+    <title>하벳리조트</title>
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/fa.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -12,7 +12,21 @@
 
 </head>
 
+
 <body>
+    <script>
+        function NotScrollTop0__init() {
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop > 20) {
+                $('#top').css("opacity","0");
+
+            } else {
+                $('#top').css("opacity","1");
+            }
+        }
+    </script>
+
     <div id="header">
         <div class="top" id="top">
             <h1>
@@ -36,7 +50,7 @@
         </div>
 
 
-        <div class="nav">
+        <div class="nav" id="nav">
             <div class="nav_logo">
                 <a href="index.html"><img src="img/logobbb.png" alt=""></a></div>
             <div class="nav_menu">
@@ -112,7 +126,7 @@
 
                 <div class="bg">
                     <a href="#">
-                        </a></div>
+                    </a></div>
 
             </div>
         </div>
@@ -140,10 +154,10 @@
 
     <div id="f-page" class="fpage">
         <div class="pW" id="f-page-wrap">
-            <div class="tbox"><img src="img/index_1.png" alt="" style="opacity: 0.9"></div>
-            <div class="tbox"><img src="img/index_2.png" alt="" style="opacity: 0.9"></div>
-            <div class="tbox"><img src="img/index_3.png" alt="" style="opacity: 0.9"></div>
-            <div class="tbox"><img src="img/index_4.png" alt="" style="opacity: 0.9"></div>
+            <div class="tbox"><img src="img/index_1.jpg" alt="" style="opacity: 0.9"></div>
+            <div class="tbox"><img src="img/index_2.jpg" alt="" style="opacity: 0.9"></div>
+            <div class="tbox"><img src="img/index_3.jpg" alt="" style="opacity: 0.9"></div>
+            <div class="tbox"><img src="img/index_4.jpg" alt="" style="opacity: 0.9"></div>
 
 
             <footer class="indexF">

@@ -25,6 +25,7 @@ $(function () {
     console.log(winTop)
     var prev = document.querySelector('.arrow .prev');
     var next = document.querySelector('.arrow .next');
+    var nav = document.querySelector('#nav');
 
 
     window.addEventListener('mousewheel', function (e) {
@@ -35,14 +36,16 @@ $(function () {
             //down
             if (idx < divEle.length - 1) {
                 idx++;
-                console.log('a')
+                console.log(idx)
             } else {
                 a = 1
             }
+           
         } else {
             //up
             if (idx > 0 && !a) {
                 idx--;
+                console.log(idx)
             }
             if (a) {
                 a = 0;
@@ -54,6 +57,7 @@ $(function () {
         if (idx == divEle.length - 1 && a) {
             conEle.style.transform = "translateY(-" + (conPos[idx] + footH) + "px)";
             arrow.style.display = 'none';
+            nav.style.opacity = '1';
 
         } else {
             conEle.style.transform = "translateY(-" + conPos[idx] + "px)";
