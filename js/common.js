@@ -40,21 +40,5 @@ window.addEventListener('load', function () {
         }
     })
     /*=========================================*/
-    var win = window.innerHeight
-    var winTop = win.offsetTop;
-    
-    console.log(winTop);
-
-    if (this.scrollY < win+500) {
-        console.log(winTop + 500);
-        $('#top').css("opacity", "1");
-        $('#nav').css("opacity", "0");
-
-    } else {
-        $('#top').css("opacity", "0");
-        $('#nav').css("opacity", "1");
-
-    }
-
-
+   
 })
