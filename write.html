@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/common.js"></script>
 
 </head>
 
@@ -38,7 +39,7 @@
         </div>
         <div class="nav">
             <div class="nav_logo">
-                <a href="#"><img src="img/logobbb.png" alt=""></a></div>
+                <a href="#"><img src="img/logob.png" alt=""></a></div>
             <div class="nav_menu">
                 <a href="#"><img src="img/menu.png" alt=""></a></div>
             <div class="top_sns">
@@ -85,7 +86,7 @@
                                 </a></li>
                         </ul>
                     </li>
-<!--
+                    <!--
                     <li class="glt_04"><a>RESERVATION</a>
                         <ul>
                             <li><a><span class="en">RESERVATION</span><span class="ko">실시간 예약하기</span></a></li>
@@ -135,7 +136,7 @@
     <div id="f-page" class="fpage">
         <div id="f-page-wrap" class="pW">
             <div id="section01" class="tbox">
-                <img src="img/index_4.png" alt="">
+                <img src="img/write.jpg" alt="">
                 <div class="mask"></div>
             </div>
         </div>
@@ -192,12 +193,11 @@
             <div class="flogo"><a href=""><img src="img/logowww.png" alt=""></a></div>
 
             <address>
-                상호명 : 사랑그리기
-                대표 : 김아름
-                사업자 등록번호 : 594-10-00955
-                전화번호 : 010-6512-6743
-                이메일 : ttlpink@naver.com
-                주소 : 경기 가평군 북면 가화로 1144-299 (제령리)
+               개인정보 처리방침| 서비스 이용약관 | 환불 및 예약
+                        (주)휴네스트 경상북도 영덕군 병곡면 흰돌로 46 | 대표자 : 이종현 |
+                         전화 : 054-732-0200 (부재시 비상 연락처 : 010-8600-8657) 통화제한 PM 22:00 까지 | 팩스 : 054-732-7447
+                        사업자등록번호 : 621-88-00159 | 통신 판매번호: 제2017-경북영덕-0021호 |
+                         Copyright HAVET All rights reserved.
             </address>
 
             <div class="f-sns">
@@ -210,26 +210,5 @@
         </div>
     </footer>
 
-    <script>
-        var asideEl = document.querySelector('.top_btn a');
-        var asideTop = asideEl.offsetTop;
-
-
-        asideEl.addEventListener('click', function() {
-            window.scrollTo({
-                left: 0,
-                top: 0
-            });
-        })
-
-
-        window.addEventListener('scroll', function() {
-            if (this.scrollY > window.innerHeight) {
-                asideEl.classList.add('active');
-            } else {
-                asideEl.classList.remove('active');
-            }
-        })
-    </script>
 
 </body></html>

@@ -40,7 +40,12 @@ $(function () {
             } else {
                 a = 1
             }
-           
+
+            if (idx >= 1) {
+                $('#top').css("opacity", "0");
+                $('#nav').css("opacity", "1");
+
+            }
         } else {
             //up
             if (idx > 0 && !a) {
@@ -49,6 +54,11 @@ $(function () {
             }
             if (a) {
                 a = 0;
+            }
+            if (idx == 0) {
+                $('#top').css("opacity", "1");
+                $('#nav').css("opacity", "0");
+
             }
 
         }
