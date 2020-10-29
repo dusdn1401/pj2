@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>200811</title>
+    <meta charset="UTF-8">
+    <script src="dom_scroll2.js"></script>
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        /* header .active {
+            color: red;
+        }*/
+
+        top {
+            opacity: 1;
+            background: red;
+        }
+
+        nav {
+            opacity: 0;
+            background: blue;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:nth-of-type(odd) {
+            background: #eee;
+        }
+
+    </style>
+
+
+    <header>
+        <top>
+            <a href="#" class="active">Nav01</a>
+            <a href="#">Nav02</a>
+            <a href="#">Nav03</a>
+            <a href="#">Nav04</a>
+
+        </top>
+        <nav>
+            <a href="#" class="active">Nav05</a>
+            <a href="#">Nav06</a>
+            <a href="#">Nav07</a>
+            <a href="#">Nav08</a>
+        </nav>
+    </header>
+    <!-- <section>
+        <h2> Section--01</h2>
+    </section>
+    <section>
+        <h2> Section--02</h2>
+    </section>
+    <section>
+        <h2> Section--03</h2>
+    </section>
+    <section>
+        <h2> Section--04</h2>
+    </section>-->
+
+    <div id="f-page" class="fpage">
+        <div id="f-page-wrap" class="pW">
+            <div id="section01" class="tbox">
+                <img src="img/community.jpg" alt="">
+                <div class="mask"></div>
+            </div>
+        </div>
+        <div id="f-page-wrap" class="pW">
+            <div id="section01" class="tbox">
+                <img src="img/community.jpg" alt="">
+                <div class="mask"></div>
+            </div>
+        </div>
+        <div id="f-page-wrap" class="pW">
+            <div id="section01" class="tbox">
+                <img src="img/community.jpg" alt="">
+                <div class="mask"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--================================-->
+
+    <!-- 1. header a를 클릭이벤트 실행
+    - window scroll를 이동시킴(섹션의 offsetTop만큼(콘텐츠가 상단으로부터 떨어진 거리))
+
+    - 모든 a 태그에 active를 remove 함
+    - 클릭한 a 태그에 active 추가
+
+    2. window 스크롤 이벤트 실행
+
+    - section의 offsetTop보다 scroll값이 더 커지면
+    -> 모든 a 태그에 active를 remove 함
+    -> 클릭한 a 태그에 active 추가-->
+
+
+
+
+
+
+</body>
+
+</html>
